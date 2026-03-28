@@ -1,4 +1,5 @@
 from flask import Blueprint, request, jsonify
+from app.services.orchestrator import extract_user_info
 
 voice_bp = Blueprint("voice", __name__)
 
@@ -6,10 +7,14 @@ voice_bp = Blueprint("voice", __name__)
 def handle_voice():
     data = request.json
 
-    user_input = data.get("text", "")
+    text = data.get("text", "")
+
+    user_profile = extract_user_info(text)
 
     # Temporary response
-    return jsonify({
-        "message": "Received input",
-        "input": user_input
-    })
+    return jsonify(
+        {
+            "input":text,
+            "extracted":user_profile
+        }
+    )
