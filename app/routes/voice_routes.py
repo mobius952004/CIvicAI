@@ -20,6 +20,6 @@ def handle_voice():
             "input":text,
             "extracted":user_profile,
             "schemes":schemes,
-            "Response":response
+            "Response":final_response
         }
     )

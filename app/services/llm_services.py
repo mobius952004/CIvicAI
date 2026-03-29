@@ -33,12 +33,16 @@ def generate_response(user_query, schemes):
     {scheme_text}
 
     Instructions:
-    - Answer in simple Hindi
+    - Answer in user_query language
     - Explain clearly which schemes apply
     - Mention eligibility and documents
     - Keep it conversational and easy
     """
 
-    response = model.generate_content(prompt)
+    response = model.generate_content(prompt,
+    #      {   "max_output_tokens": 512,
+    #     "temperature": 0.3
+    # }
+    )
 
     return response.text
