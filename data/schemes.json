@@ -1,0 +1,23 @@
+[
+  {
+    "name": "PM Kisan Samman Nidhi",
+    "state": "All",
+    "category": "agriculture",
+    "eligibility": "Small and marginal farmers",
+    "documents": ["Aadhaar", "Bank Account", "Land Records"]
+  },
+  {
+    "name": "UP Kisan Karz Rahat Yojana",
+    "state": "Uttar Pradesh",
+    "category": "agriculture",
+    "eligibility": "Farmers with crop loans",
+    "documents": ["Loan Documents", "Aadhaar"]
+  },
+  {
+    "name": "National Scholarship Scheme",
+    "state": "All",
+    "category": "education",
+    "eligibility": "Students from low-income families",
+    "documents": ["Income Certificate", "Marksheet"]
+  }
+]

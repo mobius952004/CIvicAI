@@ -2,6 +2,9 @@ import os
 
 class Config:
     SECRET_KEY = os.getenv("SECRET_KEY", "dev_key")
+    PROJECT_ID = os.getenv("PROJECT_ID")
+    REGION = os.getenv("REGION")
+    MODEL_NAME = os.getenv("MODEL_NAME")
 
     # Future integrations
     TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
